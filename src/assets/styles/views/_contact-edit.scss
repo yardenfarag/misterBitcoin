@@ -1,0 +1,97 @@
+.contact-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  margin: em(125px) auto;
+  border-radius: em(5px);
+  padding: em(15px);
+
+  @include for-mobile-layout {
+    width: 85%;
+  }
+
+  img {
+    width:40%;
+    align-self: center;
+  }
+
+  .contact-edit-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    justify-content: center;
+
+    input {
+      margin-block: 5px;
+      width: 100%;
+      padding: em(8px);
+      border-radius: 5px;
+      border: none;
+      outline: 1px solid $clr3;
+      font-weight: bold;
+      color: $clr4;
+
+      &:focus {
+        outline: 1px solid $clr2;
+      }
+
+      &::placeholder {
+        color: $clr4;
+        font-weight: bold;
+      }
+    }
+
+    .form-save-btn {
+      cursor: pointer;
+      border: none;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: em(5px);
+      font-size: 15px;
+      border-radius: 5px;
+      margin-block-start: 1rem;
+      background-color: $clr2;
+      width: 120px;
+      color: $clr3;
+      font-weight: bold;
+      transition: background-color 0.2s;
+
+      &:hover {
+        color: $clr2;
+        background-color: $clr3;
+      }
+    }
+
+  }
+
+  .form-back-btn {
+    margin-left: 0;
+    background-color: $clr2;
+    border: none;
+    outline: none;
+    width: 80px;
+    border-radius: 5px;
+    padding: em(5px);
+    color: $clr3;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &::before {
+      font-family: fa-solid;
+      content: '\F060';
+      padding: 4px;
+      font-size: 15px;
+    }
+
+    &:hover {
+      color: $clr2;
+      background-color: $clr3;
+    }
+  }
+}

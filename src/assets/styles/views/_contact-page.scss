@@ -1,0 +1,25 @@
+.contact-page {
+  .add-contact-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: em(5px);
+    font-size: 15px;
+    border-radius: 5px;
+    margin-block-start: 1rem;
+    background-color: $clr2;
+    width: 120px;
+    color: $clr3;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    &::before {
+      font-family: fa-regular;
+        content: '\002B';
+        padding-inline-end: 5px;
+    }
+    &:hover {
+      color: $clr2;
+      background-color: $clr3;
+    }
+  }
+}

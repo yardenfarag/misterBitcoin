@@ -1,0 +1,13 @@
+.moves-list {
+  .user-moves {
+    display: flex;
+    justify-content: center;
+    border: 1px groove $clr3;
+    padding: 10px;
+    gap: 5px;
+    border-radius:5px;
+    @include for-mobile-layout {
+      flex-direction: column;
+    }
+  }
+}

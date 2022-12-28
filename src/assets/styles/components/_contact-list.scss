@@ -1,0 +1,17 @@
+.contacts-list {
+  overflow-y: auto;
+  background-color: $clr4;
+  border-radius: 5px;
+  height: em(620px);
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+  margin-block-end: 40px;
+  @include for-mobile-layout {
+    width: em(280px);
+  }
+}

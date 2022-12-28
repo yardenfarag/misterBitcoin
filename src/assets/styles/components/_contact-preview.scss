@@ -1,0 +1,79 @@
+.contact-preview {
+  margin-block-end: 110px;
+  .contact {
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $clr5;
+      width: 220px;
+      height: 100px;
+      margin: 1rem auto;
+      transition: all 0.2s;
+      border-radius: 5px;
+      gap: 15px;
+
+      .contact-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        -ms-flex-order: 0;
+      }
+      .contact-img {
+        width: 50px;
+        -ms-flex-order: 1;
+      }
+    }
+
+    .actions {
+      border-block: 3px solid $clr3;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: $clr4;
+      width: 220px;
+      margin: -80px auto;
+      padding: 5px;
+      transform: translateY(20%);
+      opacity: 0;
+      transition: transform 0.2s, opacity 0.2s;
+      font-weight: normal;
+
+      @include for-mobile-layout {
+        transform: translateY(30%);
+      }
+
+      .btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: $clr1;
+        font-size: 15px;
+        &:hover {
+          color: $clr2;
+        }
+
+        &.delete {
+          &::before {
+            font-family: fa-regular;
+            content: '\F014';
+            font-size: 20px;
+        }
+        }
+        &.edit {
+          &::before {
+            font-family: fa-regular;
+            content: '\F044';
+            font-size: 20px;
+        }
+        }
+      }
+    }
+    &:hover {
+      .actions {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}
