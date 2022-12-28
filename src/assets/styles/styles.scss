@@ -10,13 +10,13 @@
 @import 'basic/layout';
 
 // Components
-@import 'components/app-header';
-@import 'components/contact-preview';
-@import 'components/contact-filter';
-@import 'components/contact-list';
-@import 'components/charts-page';
-@import 'components/moves-list';
-@import 'components/transfer-fund';
+@import 'cmps/app-header';
+@import 'cmps/contact-preview';
+@import 'cmps/contact-filter';
+@import 'cmps/contact-list';
+@import 'cmps/charts-page';
+@import 'cmps/moves-list';
+@import 'cmps/transfer-fund';
 
 // Views
 @import 'views/home-page';

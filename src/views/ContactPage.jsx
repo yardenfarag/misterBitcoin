@@ -1,8 +1,8 @@
 import { useCallback, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { ContactList } from '../components/ContactList'
-import { ContactFilter } from '../components/ContactFilter'
+import { ContactList } from '../cmps/ContactList'
+import { ContactFilter } from '../cmps/ContactFilter'
 import { loadContacts, removeContact, setFilterBy } from '../store/actions/contactActions'
 
 export const ContactPage = () => {

@@ -2,8 +2,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUserMoves, addUserMove } from '../store/actions/userActions'
 import { useNavigate, useParams } from 'react-router-dom'
-import { MovesList } from '../components/MovesList'
-import { TransferFund } from '../components/TransferFund'
+import { MovesList } from '../cmps/MovesList'
+import { TransferFund } from '../cmps/TransferFund'
 import { contactService } from '../services/contact.service'
 
 export const ContactDetails = () => {

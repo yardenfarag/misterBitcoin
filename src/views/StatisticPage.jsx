@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import { bitcoinService } from '../services/bitcoin.service'
 // import { Sparklines, SparklinesLine } from 'react-sparklines'
-import { Chart } from '../components/Chart'
+import { Chart } from '../cmps/Chart'
 
 export class StatisticPage extends Component {
 

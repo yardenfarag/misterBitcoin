@@ -1,6 +1,6 @@
 import { HashRouter as Router, Navigate, Route, Routes } from 'react-router-dom'
 import './assets/styles/styles.scss'
-import { AppHeader } from './components/AppHeader'
+import { AppHeader } from './cmps/AppHeader'
 import { StatisticPage } from './views/StatisticPage'
 import { ContactPage } from './views/ContactPage'
 import { HomePage } from './views/HomePage'
